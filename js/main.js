@@ -62,14 +62,19 @@ $(document).ready(function() {
       format: 'json'
     },
     error: function() {
-      console.log('error');
+      console.log('error')
     },
     success: function(response) {
-      var data = JSON.parse(response);
-      var memberCount = data.n_members;
+      var data = JSON.parse(response)
+      var memberCount = data.n_members
       var el = document.getElementById("js-member-count")
+      var elMobile = document.getElementById("js-member-count-mobile")
+
       if (el) {
         el.innerHTML = memberCount.toString()
+      }
+      if (elMobile) {
+        elMobile.innerHTML = memberCount.toString()
       }
     },
     type: 'GET'
@@ -93,6 +98,9 @@ $(document).ready(function() {
         .addClass('opacity-1' + ' ' + 'will-change-opacity')
         .removeClass('hide')
         .removeClass('opacity-0');
+      $("#js-navbar-join-btn").addClass('opacity-0').removeClass('opacity-1');
+      $('.flux-logo-text').css({ fill: "#fff" });
+      $("#flux-logo-home").addClass('opacity-1');
       // $('.hamburger-inner').addClass('bg-white').removeClass('bg-black');
       $('body').addClass('overflow-hidden');
     } else {
@@ -101,6 +109,9 @@ $(document).ready(function() {
         .removeClass('opacity-1');
       // $('.hamburger-inner').addClass('bg-black').removeClass('bg-white');
       $('body').removeClass('overflow-hidden');
+      $("#js-navbar-join-btn").addClass('opacity-1').removeClass('opacity-0');
+      $('.flux-logo-text').css({ fill: "#000" });
+      $("#flux-logo-home").removeClass('opacity-1');
       setTimeout(function() {
         $("#js-menu")
           .addClass('hide')
@@ -144,16 +155,17 @@ var myEfficientFn = debounce(function() {
   var offset = $("#js-navbar").offset().top;
 
     if (offset >= 500 ) {
-      $("#js-navbar").addClass('opacity-1');
+      $("#js-navbar, #flux-logo-home").addClass('opacity-1');
+      // $("#flux-logo-home").addClass('opacity-1');
     } else {
-      $("#js-navbar").removeClass('opacity-1');
+      $("#js-navbar, #flux-logo-home").removeClass('opacity-1');
     }
 }, 15);
 
 
 function checkWidth() {
   var windowsize = $window.width();
-  if (windowsize > 640) {
+  if (windowsize > 300 ) {
     $window.on('scroll', myEfficientFn );
   } else {
     $window.off('scroll', myEfficientFn );
