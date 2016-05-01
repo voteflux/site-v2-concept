@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Roboto+Slab:400,300" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Roboto+Slab:400,300|Roboto:900" rel="stylesheet" type="text/css">
   <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,11 +13,11 @@
   <link rel="canonical" href="http://yourdomain.com/site-v2-concept/press/">
 
 
-  <meta property="og:url"           content="http://www.your-domain.com/your-page.html" />
+  <!-- <meta property="og:url"           content="http://www.your-domain.com/your-page.html" />
   <meta property="og:type"          content="website" />
   <meta property="og:title"         content="Your Website Title" />
   <meta property="og:description"   content="Your description" />
-  <meta property="og:image"         content="http://www.your-domain.com/path/image.jpg" />
+  <meta property="og:image"         content="http://www.your-domain.com/path/image.jpg" /> -->
 </head>
 
   
@@ -25,18 +25,16 @@
 
 
   <body id="top" class="">
-    
-<nav>
-  <div id="js-navbar" class="fixed col-12 z2 top-0 left-0 px2 sm-px3 py1 navbar-height bg-near-white transition-slow opacity-0 will-change-opacity shadow-light">
-
-  </div>
-  <div class="fixed col-12 top-0 left-0 z4 px2 sm-px3 py1">
+    <nav>
+  <!-- <div id="js-navbar" class="absolute col-12 z2 top-0 left-0 px2 sm-px3 py1 navbar-height bg-near-white transition-slow opacity-0 will-change-opacity shadow-light">
+  </div> -->
+  
+  <div class="absolute col-12 top-0 left-0 z4 px2 sm-px3 py2">
     <div class="flex">
       <div class="col-6">
-      
-        <a class="link-reset block pt2" href="/site-v2-concept/">
+        <a id="flux-logo-home" class="link-reset block pt2" href="/site-v2-concept/">
           <span class="flux-logo-width block">
-            <svg   class="flux-logo-text"  data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164.64 43.85" fill="#000">
+            <svg   class="flux-logo-text"  data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164.64 43.85" fill="#222">
   <title>FLUX</title>
   <path class="cls-1" d="M230,418h-6.27V374.59h25.9v6.27H230V393.1h17.39v6.34H230V418Z" transform="translate(-223.69 -374.59)" />
   <path class="cls-1" d="M270.33,411.73h20.43V418h-26.7V374.59h6.27v37.14Z" transform="translate(-223.69 -374.59)" />
@@ -46,10 +44,10 @@
 
           </span>
         </a>
-        
     </div>
+    <hr>
     <div class="col-6 right-align flex justify-end items-center">
-      <div class="inline-block mr2 xs-hide">
+      <div class="inline-block mr3 xs-hide">
         <a id="js-navbar-join-btn" href="/site-v2-concept/signup" class="btn btn-primary p1 h5 transition">Join Flux</a>
       </div>
       <div class="inline-block mt1">
@@ -62,44 +60,46 @@
     </div>
   </div>
 </div>
-</nav>
 
-<div id="js-menu" class="transition opacity-0 hide relative z3">
-<div class="py4 px2 bg-black-muted light-gray min-height-100vh fixed col-12 top-0 right-0 left-0 bottom-0">
-  <div class="height-100vh overflow-scroll absolute left-0 top-0 col-12 mt4">
-    <div class="px2">
-      <div class="mx-auto max-width-2">
-        <dl class="list-reset h3 sm-h2">
 
-          <hr class="dark-gray border-bottom my1">
-          <dt class="h5 muted mb1 caps light">About Flux</dt>
-          
-            <dd class="mb2">
-              <a href="/site-v2-concept/about/how/#top" class="link-reset h-font accent-on-hover transition-fast">The Flux voting system explained</a>
-            </dd>
-          
-            <dd class="mb2">
-              <a href="/site-v2-concept/about/faqs/#top" class="link-reset h-font accent-on-hover transition-fast">Frequently asked questions</a>
-            </dd>
-          
-            <dd class="mb2">
-              <a href="/site-v2-concept/about/who/#top" class="link-reset h-font accent-on-hover transition-fast">Who is behind Flux?</a>
-            </dd>
-          
-            <dd class="mb2">
-              <a href="/site-v2-concept/about/why-flux/#top" class="link-reset h-font accent-on-hover transition-fast">Why Australia needs Flux</a>
-            </dd>
-          
-          <hr class="dark-gray border-bottom my1">
-          <dd class="mb2"><a href="/site-v2-concept/press" class="link-reset h-font accent-on-hover transition-fast">In the news</a></dd>
-          <dd class="mb2"><a href="/site-v2-concept/#upcoming-meetups" class="link-reset h-font accent-on-hover transition-fast">Upcoming Meetups</a></dd>
-          <dd class="mb2"><a href="/site-v2-concept/#contact" class="link-reset h-font accent-on-hover transition-fast">Contact</a></dd>
-          <hr class="dark-gray border-bottom my1">
-          <!-- <dt class="h5 muted mb1 caps light">Make History</dt> -->
-          <dd class="mb2 mt3 h4"><a href="/site-v2-concept/signup" class="btn btn-primary">Join Flux</a></dd>
-
-        </dl>
-        <ul class="list-reset flex">
+  <div id="js-menu" class="transition opacity-0 hide relative z3">
+    <div class="py4 px2 bg-black-muted light-gray min-height-100vh fixed col-12 top-0 right-0 left-0 bottom-0">
+      <div class="height-100vh overflow-scroll absolute left-0 top-0 col-12 mt4">
+        <div class="px2">
+          <div class="mx-auto max-width-2">
+            <dl class="list-reset h3 sm-h2">
+              <hr class="dark-gray border-bottom my1">
+              <dt class="h5 muted mb1 caps light">About Flux</dt>
+              
+              
+                <dd class="mb2">
+                  <a href="/site-v2-concept/about/what-is-flux/#top" class="link-reset h-font accent-on-hover transition-fast">What is Flux</a>
+                </dd>
+              
+                <dd class="mb2">
+                  <a href="/site-v2-concept/about/why-flux/#top" class="link-reset h-font accent-on-hover transition-fast">Why Australia needs Flux</a>
+                </dd>
+              
+                <dd class="mb2">
+                  <a href="/site-v2-concept/about/how/#top" class="link-reset h-font accent-on-hover transition-fast">The Flux voting system explained</a>
+                </dd>
+              
+                <dd class="mb2">
+                  <a href="/site-v2-concept/about/who/#top" class="link-reset h-font accent-on-hover transition-fast">Who is behind Flux?</a>
+                </dd>
+              
+                <dd class="mb2">
+                  <a href="/site-v2-concept/about/faqs/#top" class="link-reset h-font accent-on-hover transition-fast">Frequently asked questions</a>
+                </dd>
+              
+              <hr class="dark-gray border-bottom my1">
+              <dd class="mb2"><a href="/site-v2-concept/press" class="link-reset h-font accent-on-hover transition-fast">In the news</a></dd>
+              <dd class="mb2"><a href="/site-v2-concept/#upcoming-meetups" class="link-reset h-font accent-on-hover transition-fast">Upcoming Meetups</a></dd>
+              <dd class="mb2"><a href="/site-v2-concept/#contact" class="link-reset h-font accent-on-hover transition-fast">Contact</a></dd>
+              <hr class="dark-gray border-bottom my1">
+              <dd class="mb2 mt3 h4"><a href="/site-v2-concept/signup" class="btn btn-primary">Join Flux</a></dd>
+            </dl>
+            <ul class="list-reset flex">
   <li class="opacity-hover transition mr2">
     <a href="http://www.facebook.com/sharer.php?u=" target="_blank">
       <!-- <img width="48" src="img/social-icons/facebook-with-circle.svg" alt="Facebook" /> -->
@@ -231,12 +231,14 @@
   </li>
 </ul>
 
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
-</div>
+</nav>
 
+<div class="pt4 bg-near-black"></div>
 <div class="bg-near-black light-gray py4 px2 sm-px3">
 <div class="mx-auto max-width-2">
   <div class="mb3">
@@ -259,10 +261,10 @@
                 <h4 class="h5 mb2 gray">PRESS / <span class="white">PRESS RELEASE</span>
                 </h4>
               
-              <a href="https://github.com/voteflux/voteflux.github.io/blob/master/press_releases/pr_flux_201604014.pdf" target="_blank" class="link-reset block">
+              <a href="https://github.com/voteflux/voteflux.github.io/blob/master/press_releases/pr_flux_201604014.pdf" target="_blank" class="link-reset block hover-show-child">
                 <h2 class="h3 sm-h2 h-font light line-height-4 accent-on-hover transition-fast inline">
-                  PR: Changing politics in the digital age: How two entrepreneurs plan to use technology to disrupt Australian politics<i class="material-icons icon-adjust muted">call_made</i>
-                </h2>
+                  PR: Changing politics in the digital age: How two entrepreneurs plan to use technology to disrupt Australian politics
+                </h2><i class="material-icons icon-adjust muted">call_made</i>
               </a>
             </div>
             <time datetime="2016-04-14" class="italic gray">
@@ -279,10 +281,10 @@
                 <h4 class="h5 mb2 gray">ARTICLE / <span class="white">BEGA DISTRICT NEWS</span>
                 </h4>
               
-              <a href="http://www.begadistrictnews.com.au/story/3842657/crowdsourcing-democracy-for-the-fed-up/" target="_blank" class="link-reset block">
+              <a href="http://www.begadistrictnews.com.au/story/3842657/crowdsourcing-democracy-for-the-fed-up/" target="_blank" class="link-reset block hover-show-child">
                 <h2 class="h3 sm-h2 h-font light line-height-4 accent-on-hover transition-fast inline">
-                  OPINION: Crowdsourcing democracy for the disenchanted<i class="material-icons icon-adjust muted">call_made</i>
-                </h2>
+                  OPINION: Crowdsourcing democracy for the disenchanted
+                </h2><i class="material-icons icon-adjust muted">call_made</i>
               </a>
             </div>
             <time datetime="2016-04-12" class="italic gray">
@@ -299,10 +301,10 @@
                 <h4 class="h5 mb2 gray">ARTICLE / <span class="white">THE BIG SMOKE</span>
                 </h4>
               
-              <a href="http://thebigsmoke.com.au/2016/04/11/flux-australias-new-smart-political-party-vote-counts/" target="_blank" class="link-reset block">
+              <a href="http://thebigsmoke.com.au/2016/04/11/flux-australias-new-smart-political-party-vote-counts/" target="_blank" class="link-reset block hover-show-child">
                 <h2 class="h3 sm-h2 h-font light line-height-4 accent-on-hover transition-fast inline">
-                  Flux: Australia’s new smart political party, where you matter<i class="material-icons icon-adjust muted">call_made</i>
-                </h2>
+                  Flux: Australia’s new smart political party, where you matter
+                </h2><i class="material-icons icon-adjust muted">call_made</i>
               </a>
             </div>
             <time datetime="2016-04-11" class="italic gray">
@@ -319,10 +321,10 @@
                 <h4 class="h5 mb2 gray">ARTICLE / <span class="white">BUSINESS INSIDER AUSTRALIA</span>
                 </h4>
               
-              <a href="http://www.businessinsider.com.au/innovation-insights-14-australian-entrepreneurs-share-what-innovation-means-to-them-2016-3" target="_blank" class="link-reset block">
+              <a href="http://www.businessinsider.com.au/innovation-insights-14-australian-entrepreneurs-share-what-innovation-means-to-them-2016-3" target="_blank" class="link-reset block hover-show-child">
                 <h2 class="h3 sm-h2 h-font light line-height-4 accent-on-hover transition-fast inline">
-                  INNOVATION INSIGHTS: 14 Australian entrepreneurs share what innovation means to them<i class="material-icons icon-adjust muted">call_made</i>
-                </h2>
+                  INNOVATION INSIGHTS: 14 Australian entrepreneurs share what innovation means to them
+                </h2><i class="material-icons icon-adjust muted">call_made</i>
               </a>
             </div>
             <time datetime="2016-03-21" class="italic gray">
@@ -339,10 +341,10 @@
                 <h4 class="h5 mb2 gray">ARTICLE / <span class="white">2SER 107.3</span>
                 </h4>
               
-              <a href="http://www.2ser.com/component/k2/item/21245-does-australia-s-preferential-voting-system-need-a-overhaul" target="_blank" class="link-reset block">
+              <a href="http://www.2ser.com/component/k2/item/21245-does-australia-s-preferential-voting-system-need-a-overhaul" target="_blank" class="link-reset block hover-show-child">
                 <h2 class="h3 sm-h2 h-font light line-height-4 accent-on-hover transition-fast inline">
-                  Is Australia's politics in a state of Flux?<i class="material-icons icon-adjust muted">call_made</i>
-                </h2>
+                  Is Australia's politics in a state of Flux?
+                </h2><i class="material-icons icon-adjust muted">call_made</i>
               </a>
             </div>
             <time datetime="2016-03-21" class="italic gray">
@@ -359,10 +361,10 @@
                 <h4 class="h5 mb2 gray">ARTICLE / <span class="white">TRIPLE J'S HACK</span>
                 </h4>
               
-              <a href="http://www.abc.net.au/triplej/programs/hack/ange/7212056" target="_blank" class="link-reset block">
+              <a href="http://www.abc.net.au/triplej/programs/hack/ange/7212056" target="_blank" class="link-reset block hover-show-child">
                 <h2 class="h3 sm-h2 h-font light line-height-4 accent-on-hover transition-fast inline">
-                  Crowdsourcing democracy: The party that started on Facebook<i class="material-icons icon-adjust muted">call_made</i>
-                </h2>
+                  Crowdsourcing democracy: The party that started on Facebook
+                </h2><i class="material-icons icon-adjust muted">call_made</i>
               </a>
             </div>
             <time datetime="2016-03-01" class="italic gray">
@@ -379,10 +381,10 @@
                 <h4 class="h5 mb2 gray">ARTICLE / <span class="white">NASDAQ</span>
                 </h4>
               
-              <a href="http://www.nasdaq.com/article/governments-around-the-world-are-warming-up-to-bitcoin-and-the-blockchain-cm586766" target="_blank" class="link-reset block">
+              <a href="http://www.nasdaq.com/article/governments-around-the-world-are-warming-up-to-bitcoin-and-the-blockchain-cm586766" target="_blank" class="link-reset block hover-show-child">
                 <h2 class="h3 sm-h2 h-font light line-height-4 accent-on-hover transition-fast inline">
-                  Governments Around the World Are Warming Up to Bitcoin and the Blockchain<i class="material-icons icon-adjust muted">call_made</i>
-                </h2>
+                  Governments Around the World Are Warming Up to Bitcoin and the Blockchain
+                </h2><i class="material-icons icon-adjust muted">call_made</i>
               </a>
             </div>
             <time datetime="2016-03-01" class="italic gray">
@@ -399,10 +401,10 @@
                 <h4 class="h5 mb2 gray">ARTICLE / <span class="white">THE DAILY EXAMINER</span>
                 </h4>
               
-              <a href="http://www.dailyexaminer.com.au/news/party-voters/2941736/" target="_blank" class="link-reset block">
+              <a href="http://www.dailyexaminer.com.au/news/party-voters/2941736/" target="_blank" class="link-reset block hover-show-child">
                 <h2 class="h3 sm-h2 h-font light line-height-4 accent-on-hover transition-fast inline">
-                  A party for voters to 'like'<i class="material-icons icon-adjust muted">call_made</i>
-                </h2>
+                  A party for voters to 'like'
+                </h2><i class="material-icons icon-adjust muted">call_made</i>
               </a>
             </div>
             <time datetime="2016-02-23" class="italic gray">
@@ -419,10 +421,10 @@
                 <h4 class="h5 mb2 gray">ARTICLE / <span class="white">NEOWIN</span>
                 </h4>
               
-              <a href="http://www.neowin.net/news/bitcoin-consultants-form-flux-political-party-in-australia" target="_blank" class="link-reset block">
+              <a href="http://www.neowin.net/news/bitcoin-consultants-form-flux-political-party-in-australia" target="_blank" class="link-reset block hover-show-child">
                 <h2 class="h3 sm-h2 h-font light line-height-4 accent-on-hover transition-fast inline">
-                  Bitcoin consultants form Flux political party in Australia<i class="material-icons icon-adjust muted">call_made</i>
-                </h2>
+                  Bitcoin consultants form Flux political party in Australia
+                </h2><i class="material-icons icon-adjust muted">call_made</i>
               </a>
             </div>
             <time datetime="2016-02-23" class="italic gray">
@@ -439,10 +441,10 @@
                 <h4 class="h5 mb2 gray">ARTICLE / <span class="white">NEWS.COM.AU</span>
                 </h4>
               
-              <a href="http://www.news.com.au/finance/work/leaders/new-political-party-flux-says-it-wants-to-change-australias-political-system-by-focusing-on-policy/news-story/984c7d181d564cb35e0f004c02e8e023" target="_blank" class="link-reset block">
+              <a href="http://www.news.com.au/finance/work/leaders/new-political-party-flux-says-it-wants-to-change-australias-political-system-by-focusing-on-policy/news-story/984c7d181d564cb35e0f004c02e8e023" target="_blank" class="link-reset block hover-show-child">
                 <h2 class="h3 sm-h2 h-font light line-height-4 accent-on-hover transition-fast inline">
-                  New political party Flux says it wants to change Australia’s political system by focusing on policy<i class="material-icons icon-adjust muted">call_made</i>
-                </h2>
+                  New political party Flux says it wants to change Australia’s political system by focusing on policy
+                </h2><i class="material-icons icon-adjust muted">call_made</i>
               </a>
             </div>
             <time datetime="2016-02-22" class="italic gray">
@@ -459,10 +461,10 @@
                 <h4 class="h5 mb2 gray">ARTICLE / <span class="white">THE MERKLE</span>
                 </h4>
               
-              <a href="http://themerkle.com/news/australian-political-party-aims-to-reinvent-democracy-with-blockchain-tech/" target="_blank" class="link-reset block">
+              <a href="http://themerkle.com/news/australian-political-party-aims-to-reinvent-democracy-with-blockchain-tech/" target="_blank" class="link-reset block hover-show-child">
                 <h2 class="h3 sm-h2 h-font light line-height-4 accent-on-hover transition-fast inline">
-                  Australian Political Party Aims to Reinvent Democracy with Blockchain Tech<i class="material-icons icon-adjust muted">call_made</i>
-                </h2>
+                  Australian Political Party Aims to Reinvent Democracy with Blockchain Tech
+                </h2><i class="material-icons icon-adjust muted">call_made</i>
               </a>
             </div>
             <time datetime="2016-02-18" class="italic gray">
@@ -479,10 +481,10 @@
                 <h4 class="h5 mb2 gray">ARTICLE / <span class="white">COINDESK</span>
                 </h4>
               
-              <a href="http://www.coindesk.com/australian-political-party-blockchain-voting/" target="_blank" class="link-reset block">
+              <a href="http://www.coindesk.com/australian-political-party-blockchain-voting/" target="_blank" class="link-reset block hover-show-child">
                 <h2 class="h3 sm-h2 h-font light line-height-4 accent-on-hover transition-fast inline">
-                  New Australian Political Party Seeks to Popularize Blockchain Voting<i class="material-icons icon-adjust muted">call_made</i>
-                </h2>
+                  New Australian Political Party Seeks to Popularize Blockchain Voting
+                </h2><i class="material-icons icon-adjust muted">call_made</i>
               </a>
             </div>
             <time datetime="2016-02-17" class="italic gray">
@@ -499,10 +501,10 @@
                 <h4 class="h5 mb2 gray">ARTICLE / <span class="white">REUTERS</span>
                 </h4>
               
-              <a href="http://www.reuters.com/article/us-australia-politics-tech-idUSKCN0VP2TJ" target="_blank" class="link-reset block">
+              <a href="http://www.reuters.com/article/us-australia-politics-tech-idUSKCN0VP2TJ" target="_blank" class="link-reset block hover-show-child">
                 <h2 class="h3 sm-h2 h-font light line-height-4 accent-on-hover transition-fast inline">
-                  Flux Party seeks to be the bitcoin of Australian politics<i class="material-icons icon-adjust muted">call_made</i>
-                </h2>
+                  Flux Party seeks to be the bitcoin of Australian politics
+                </h2><i class="material-icons icon-adjust muted">call_made</i>
               </a>
             </div>
             <time datetime="2016-02-16" class="italic gray">
@@ -519,10 +521,10 @@
                 <h4 class="h5 mb2 gray">ARTICLE / <span class="white">SMH</span>
                 </h4>
               
-              <a href="http://www.smh.com.au/federal-politics/political-news/the-bitcoin-of-politics-flux-party-offers-radical-new-model-for-democracy-20160205-gmn066.html" target="_blank" class="link-reset block">
+              <a href="http://www.smh.com.au/federal-politics/political-news/the-bitcoin-of-politics-flux-party-offers-radical-new-model-for-democracy-20160205-gmn066.html" target="_blank" class="link-reset block hover-show-child">
                 <h2 class="h3 sm-h2 h-font light line-height-4 accent-on-hover transition-fast inline">
-                  The Bitcoin of politics: Flux Party offers radical new model for democracy<i class="material-icons icon-adjust muted">call_made</i>
-                </h2>
+                  The Bitcoin of politics: Flux Party offers radical new model for democracy
+                </h2><i class="material-icons icon-adjust muted">call_made</i>
               </a>
             </div>
             <time datetime="2016-02-07" class="italic gray">
@@ -539,10 +541,10 @@
                 <h4 class="h5 mb2 gray">ARTICLE / <span class="white">NEWS.COM.AU</span>
                 </h4>
               
-              <a href="http://www.news.com.au/national/breaking-news/new-political-party-flux-set-to-register/news-story/dce5d1c926cc4a417025d4ffc1eb081f" target="_blank" class="link-reset block">
+              <a href="http://www.news.com.au/national/breaking-news/new-political-party-flux-set-to-register/news-story/dce5d1c926cc4a417025d4ffc1eb081f" target="_blank" class="link-reset block hover-show-child">
                 <h2 class="h3 sm-h2 h-font light line-height-4 accent-on-hover transition-fast inline">
-                  New political party 'Flux' set to register<i class="material-icons icon-adjust muted">call_made</i>
-                </h2>
+                  New political party 'Flux' set to register
+                </h2><i class="material-icons icon-adjust muted">call_made</i>
               </a>
             </div>
             <time datetime="2016-01-27" class="italic gray">
@@ -560,9 +562,11 @@
  footer here
 
 <!--  
+ Frequently asked questions
+ 
  The Flux voting system explained
  
- Frequently asked questions
+ What is Flux
  
  Who is behind Flux?
  

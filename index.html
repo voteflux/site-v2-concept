@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Roboto+Slab:400,300" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Roboto+Slab:400,300|Roboto:900" rel="stylesheet" type="text/css">
   <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,11 +13,11 @@
   <link rel="canonical" href="http://yourdomain.com/site-v2-concept/">
 
 
-  <meta property="og:url"           content="http://www.your-domain.com/your-page.html" />
+  <!-- <meta property="og:url"           content="http://www.your-domain.com/your-page.html" />
   <meta property="og:type"          content="website" />
   <meta property="og:title"         content="Your Website Title" />
   <meta property="og:description"   content="Your description" />
-  <meta property="og:image"         content="http://www.your-domain.com/path/image.jpg" />
+  <meta property="og:image"         content="http://www.your-domain.com/path/image.jpg" /> -->
 </head>
 
   
@@ -29,18 +29,16 @@
 
 
 
-
 <nav>
-  <div id="js-navbar" class="fixed col-12 z2 top-0 left-0 px2 sm-px3 py1 navbar-height bg-near-white transition-slow opacity-0 will-change-opacity shadow-light">
-
-  </div>
-  <div class="fixed col-12 top-0 left-0 z4 px2 sm-px3 py1">
+  <!-- <div id="js-navbar" class="absolute col-12 z2 top-0 left-0 px2 sm-px3 py1 navbar-height bg-near-white transition-slow opacity-0 will-change-opacity shadow-light">
+  </div> -->
+  
+  <div class="absolute col-12 top-0 left-0 z4 px2 sm-px3 py2">
     <div class="flex">
       <div class="col-6">
-      
-        <a class="link-reset block pt2" href="/site-v2-concept/">
+        <a id="flux-logo-home" class="link-reset block pt2" href="/site-v2-concept/">
           <span class="flux-logo-width block">
-            <svg   class="flux-logo-text"  data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164.64 43.85" fill="#000">
+            <svg   class="flux-logo-text"  data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164.64 43.85" fill="#222">
   <title>FLUX</title>
   <path class="cls-1" d="M230,418h-6.27V374.59h25.9v6.27H230V393.1h17.39v6.34H230V418Z" transform="translate(-223.69 -374.59)" />
   <path class="cls-1" d="M270.33,411.73h20.43V418h-26.7V374.59h6.27v37.14Z" transform="translate(-223.69 -374.59)" />
@@ -50,10 +48,10 @@
 
           </span>
         </a>
-        
     </div>
+    <hr>
     <div class="col-6 right-align flex justify-end items-center">
-      <div class="inline-block mr2 xs-hide">
+      <div class="inline-block mr3 xs-hide">
         <a id="js-navbar-join-btn" href="/site-v2-concept/signup" class="btn btn-primary p1 h5 transition">Join Flux</a>
       </div>
       <div class="inline-block mt1">
@@ -66,44 +64,46 @@
     </div>
   </div>
 </div>
-</nav>
 
-<div id="js-menu" class="transition opacity-0 hide relative z3">
-<div class="py4 px2 bg-black-muted light-gray min-height-100vh fixed col-12 top-0 right-0 left-0 bottom-0">
-  <div class="height-100vh overflow-scroll absolute left-0 top-0 col-12 mt4">
-    <div class="px2">
-      <div class="mx-auto max-width-2">
-        <dl class="list-reset h3 sm-h2">
 
-          <hr class="dark-gray border-bottom my1">
-          <dt class="h5 muted mb1 caps light">About Flux</dt>
-          
-            <dd class="mb2">
-              <a href="/site-v2-concept/about/how/#top" class="link-reset h-font accent-on-hover transition-fast">The Flux voting system explained</a>
-            </dd>
-          
-            <dd class="mb2">
-              <a href="/site-v2-concept/about/faqs/#top" class="link-reset h-font accent-on-hover transition-fast">Frequently asked questions</a>
-            </dd>
-          
-            <dd class="mb2">
-              <a href="/site-v2-concept/about/who/#top" class="link-reset h-font accent-on-hover transition-fast">Who is behind Flux?</a>
-            </dd>
-          
-            <dd class="mb2">
-              <a href="/site-v2-concept/about/why-flux/#top" class="link-reset h-font accent-on-hover transition-fast">Why Australia needs Flux</a>
-            </dd>
-          
-          <hr class="dark-gray border-bottom my1">
-          <dd class="mb2"><a href="/site-v2-concept/press" class="link-reset h-font accent-on-hover transition-fast">In the news</a></dd>
-          <dd class="mb2"><a href="/site-v2-concept/#upcoming-meetups" class="link-reset h-font accent-on-hover transition-fast">Upcoming Meetups</a></dd>
-          <dd class="mb2"><a href="/site-v2-concept/#contact" class="link-reset h-font accent-on-hover transition-fast">Contact</a></dd>
-          <hr class="dark-gray border-bottom my1">
-          <!-- <dt class="h5 muted mb1 caps light">Make History</dt> -->
-          <dd class="mb2 mt3 h4"><a href="/site-v2-concept/signup" class="btn btn-primary">Join Flux</a></dd>
-
-        </dl>
-        <ul class="list-reset flex">
+  <div id="js-menu" class="transition opacity-0 hide relative z3">
+    <div class="py4 px2 bg-black-muted light-gray min-height-100vh fixed col-12 top-0 right-0 left-0 bottom-0">
+      <div class="height-100vh overflow-scroll absolute left-0 top-0 col-12 mt4">
+        <div class="px2">
+          <div class="mx-auto max-width-2">
+            <dl class="list-reset h3 sm-h2">
+              <hr class="dark-gray border-bottom my1">
+              <dt class="h5 muted mb1 caps light">About Flux</dt>
+              
+              
+                <dd class="mb2">
+                  <a href="/site-v2-concept/about/what-is-flux/#top" class="link-reset h-font accent-on-hover transition-fast">What is Flux</a>
+                </dd>
+              
+                <dd class="mb2">
+                  <a href="/site-v2-concept/about/why-flux/#top" class="link-reset h-font accent-on-hover transition-fast">Why Australia needs Flux</a>
+                </dd>
+              
+                <dd class="mb2">
+                  <a href="/site-v2-concept/about/how/#top" class="link-reset h-font accent-on-hover transition-fast">The Flux voting system explained</a>
+                </dd>
+              
+                <dd class="mb2">
+                  <a href="/site-v2-concept/about/who/#top" class="link-reset h-font accent-on-hover transition-fast">Who is behind Flux?</a>
+                </dd>
+              
+                <dd class="mb2">
+                  <a href="/site-v2-concept/about/faqs/#top" class="link-reset h-font accent-on-hover transition-fast">Frequently asked questions</a>
+                </dd>
+              
+              <hr class="dark-gray border-bottom my1">
+              <dd class="mb2"><a href="/site-v2-concept/press" class="link-reset h-font accent-on-hover transition-fast">In the news</a></dd>
+              <dd class="mb2"><a href="/site-v2-concept/#upcoming-meetups" class="link-reset h-font accent-on-hover transition-fast">Upcoming Meetups</a></dd>
+              <dd class="mb2"><a href="/site-v2-concept/#contact" class="link-reset h-font accent-on-hover transition-fast">Contact</a></dd>
+              <hr class="dark-gray border-bottom my1">
+              <dd class="mb2 mt3 h4"><a href="/site-v2-concept/signup" class="btn btn-primary">Join Flux</a></dd>
+            </dl>
+            <ul class="list-reset flex">
   <li class="opacity-hover transition mr2">
     <a href="http://www.facebook.com/sharer.php?u=" target="_blank">
       <!-- <img width="48" src="img/social-icons/facebook-with-circle.svg" alt="Facebook" /> -->
@@ -235,11 +235,12 @@
   </li>
 </ul>
 
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
-</div>
+</nav>
 
 
 <main>
@@ -251,15 +252,13 @@
       <header class="white md-col-2 px2">
         <div class="">
           <div class="silver">
-<div class="xs-flex sm-flex md-block">
-
-
-            <div class="md-mb1">
-              <img src="img/flux-mark.svg" alt="FLUX LOGO" class="flux-logo-width">
-            </div>
-            <div class="flex flex-column justify-center pl2 md-p0">
-                <div class="flux-logo-text-width ">
-                  <svg   data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164.64 43.85" fill="white">
+            <div class="xs-flex sm-flex md-block">
+              <div class="md-mb1">
+                <img src="img/flux-mark.svg" alt="FLUX LOGO" class="flux-logo-width">
+              </div>
+              <div class="flex flex-column justify-center pl2 md-p0">
+                  <div class="flux-logo-text-width ">
+                    <svg   data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164.64 43.85" fill="white">
   <title>FLUX</title>
   <path class="cls-1" d="M230,418h-6.27V374.59h25.9v6.27H230V393.1h17.39v6.34H230V418Z" transform="translate(-223.69 -374.59)" />
   <path class="cls-1" d="M270.33,411.73h20.43V418h-26.7V374.59h6.27v37.14Z" transform="translate(-223.69 -374.59)" />
@@ -267,21 +266,18 @@
   <path class="cls-1" d="M362.68,382.39l-5.66-7.8h-7.7L365,396.2c-4.66,6.4-11.74,16.27-15.71,21.8H357l11.8-16.27L380.69,418h7.64Zm12.09,10.85c4.45-6.1,10-13.71,13.56-18.65h-7.64L371,387.94Z" transform="translate(-223.69 -374.59)" />
 </svg>
 
-                </div>
-                <h1 class="hide">FLUX</h1>
-                <h3 class="xs-hide sm-hide muted gray regular mb0">PROGRESS<br>FOR PROCESS</h3>
+                  </div>
+                  <h1 class="hide">FLUX</h1>
+                  <h3 class="xs-hide sm-hide muted gray regular mb0">PROGRESS<br>FOR PROCESS</h3>
+              </div>
             </div>
-
-</div>
-
             <div class="xs-hide sm-hide">
               <div class="clearfix">
                 <hr class="muted border-bottom black col-9 left my2">
               </div>
-              <h5 class="muted caps">Registered <br>   Members</h5>
+              <h5 class="muted caps">Registered<br>Members</h5>
               <h3><span id="js-member-count">Loading...</span></h3>
             </div>
-
           </div>
         </div>
       </header>
@@ -297,10 +293,10 @@
 </div>
 
             <p class="h3 sm-h2 h-font light mb4 silver letter-spacing-2 line-height-4">
-              Flux is a new political party that will act as your gateway into parliament. When an issue is before parliament you vote in real time. We call it issue based direct democracy.
+              Flux is a new political party that will act as your gateway to participate directly in parliament. When a bill is put forward you can vote in real time. Flux is here to help redistribute political power and empower the Australian people. Politics will never change unless WE change the system!
 
             </p>
-            <a href="/site-v2-concept/signup" class="h2 regular link-reset inline-block border-bottom accent letter-spacing-1">
+            <a href="/site-v2-concept/signup" class="h2 regular link-reset inline-block border-bottom accent">
               Join the movement
             </a>
             <div class="md-hide lg-hide silver">
@@ -309,7 +305,6 @@
             </div>
         </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -321,9 +316,17 @@
       <div class="md-col-9">
         <h5 class="h4"><span class="gray">ABOUT FLUX</span> / <span class="bold">WHY</span></h5>
         <hr class="accent-muted muted border-bottom">
-        <h1 class="h0 bold mb3 line-height-2">Why Australia needs Flux</h1>
-        <p class="h3 sm-h2 light h-font mb4 gray letter-spacing-2 line-height-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        <a href="/site-v2-concept/about/why-flux" class="h3 sm-h2 border-bottom accent inline-block">Learn more</a>
+        <h1 class="h0 bold mb3 line-height-2">
+            Why Australia needs Flux
+        </h1>
+        <p class="h3 sm-h2 light h-font mb4 gray letter-spacing-2 line-height-4">
+          Australian politics is broken. Traditional politicians say one thing to get elected and then do another. Horse trading and backroom deals have become more important than good policy. Flux is here to help upgrade our democracy, pioneering a real-time voting system which gives you a direct voice into parliament. #takethepowerback
+
+        </p>
+        <a href="/site-v2-concept/about/why-flux"
+           class="h3 sm-h2 border-bottom accent inline-block">
+          Find out more
+        </a>
       </div>
     </div>
   </div>
@@ -332,7 +335,7 @@
 <!-- SECOND CALLOUT SECTION -->
 <section class="full-bg-img height-40vh py2 sm-py4 min-height-95vh">
   <div class="max-width-4 mx-auto clearfix px1 sm-px2 md-px3">
-    <div class="bg-near-black light-gray px2 py4 sm-p4 sm-col-right sm-col-9 mt4">
+    <div class="bg-near-black light-gray px2 py4 sm-p4 sm-col-right sm-col-12 md-col-9 mt4">
       <div class="mb3">
         <div class="mb3">
   <h2 id=we-re-fed-up-with-the-political-process-too class="mb0 h0 line-height-2 bold   line-height-2"> We're fed up with the political process too
@@ -341,11 +344,14 @@
   
 </div>
 
+        <p class="h3 sm-h2 h-font mb4 light letter-spacing-2 line-height-4 silver">
+          Feel unrepresented? Fed up with broken promises? Vote to change the system. Flux is a new system, not about ideology, but of progress for process. Elect Flux and make your voice heard. Help us contest the 2016 federal election and change ‪#‎AusPol‬ forever.
 
-        <p class="h3 sm-h2 h-font mb4 light letter-spacing-2 line-height-4 gray">Flux is a movement not about ideology, but about progress for process. Flux Party members come from every age bracket and all walks of life, as well as from the left, centre, and right of politics.</p>
+        </p>
       </div>
       <div class="gray">
-        <a href="/site-v2-concept/signup" class="h3 sm-h2 link-reset border-bottom inline-block accent">
+        <a href="/site-v2-concept/signup"
+           class="h3 sm-h2 link-reset border-bottom inline-block accent">
           Become a member
         </a>
       </div>
@@ -361,10 +367,10 @@
       <div class="max-width-4 mx-auto px2 md-px3">
         <div class="sm-col-9">
           <h5 class="h4"><span class="gray">
-            ABOUT FLUX</span> / <span class="bold">HOW</span>
+            ABOUT FLUX</span> / <span class="bold">WHAT</span>
           </h5>
-          <h1 class="h0 bold line-height-1">The Flux voting system explained</h1>
-          <a href="/site-v2-concept/about/how/" class="h3 sm-h2 link-reset border-bottom inline-block accent">
+          <h1 class="h0 bold line-height-1">What is Flux</h1>
+          <a href="/site-v2-concept/about/what-is-flux/" class="h3 sm-h2 link-reset border-bottom inline-block accent">
             Learn more
           </a>
         </div>
@@ -374,14 +380,16 @@
   
 
   
+
+  
     <section class="bg-white dark-gray py4 relative z1">
       <div class="max-width-4 mx-auto px2 md-px3">
         <div class="sm-col-9">
           <h5 class="h4"><span class="gray">
-            ABOUT FLUX</span> / <span class="bold">ANSWERS</span>
+            ABOUT FLUX</span> / <span class="bold">HOW</span>
           </h5>
-          <h1 class="h0 bold line-height-1">Frequently asked questions</h1>
-          <a href="/site-v2-concept/about/faqs/" class="h3 sm-h2 link-reset border-bottom inline-block accent">
+          <h1 class="h0 bold line-height-1">The Flux voting system explained</h1>
+          <a href="/site-v2-concept/about/how/" class="h3 sm-h2 link-reset border-bottom inline-block accent">
             Learn more
           </a>
         </div>
@@ -407,6 +415,21 @@
     <hr class="accent-muted muted border-bottom m0">
   
 
+  
+    <section class="bg-white dark-gray py4 relative z1">
+      <div class="max-width-4 mx-auto px2 md-px3">
+        <div class="sm-col-9">
+          <h5 class="h4"><span class="gray">
+            ABOUT FLUX</span> / <span class="bold">ANSWERS</span>
+          </h5>
+          <h1 class="h0 bold line-height-1">Frequently asked questions</h1>
+          <a href="/site-v2-concept/about/faqs/" class="h3 sm-h2 link-reset border-bottom inline-block accent">
+            Learn more
+          </a>
+        </div>
+      </div>
+    </section>
+    <hr class="accent-muted muted border-bottom m0">
   
 
 
@@ -437,7 +460,7 @@
             <div class="sm-col-6 lg-col-4 px2">
               <div class="mb3">
                 <hr class="border-bottom accent-muted mb1 muted">
-                <div class="flex flex-column justify-between height-3">
+                <div class="flex flex-column justify-between height-2">
                   <div>
                     
                       <h5 class="mb2 gray">PRESS <span class="light-silver">PRESS RELEASE</span>
@@ -455,12 +478,11 @@
                 </div>
               </div>
             </div>
-
         
             <div class="sm-col-6 lg-col-4 px2">
               <div class="mb3">
                 <hr class="border-bottom accent-muted mb1 muted">
-                <div class="flex flex-column justify-between height-3">
+                <div class="flex flex-column justify-between height-2">
                   <div>
                     
                       <h5 class="mb2 gray">ARTICLE <span class="light-silver">BEGA DISTRICT NEWS</span>
@@ -478,12 +500,11 @@
                 </div>
               </div>
             </div>
-
         
             <div class="sm-col-6 lg-col-4 px2">
               <div class="mb3">
                 <hr class="border-bottom accent-muted mb1 muted">
-                <div class="flex flex-column justify-between height-3">
+                <div class="flex flex-column justify-between height-2">
                   <div>
                     
                       <h5 class="mb2 gray">ARTICLE <span class="light-silver">THE BIG SMOKE</span>
@@ -501,12 +522,11 @@
                 </div>
               </div>
             </div>
-
         
             <div class="sm-col-6 lg-col-4 px2">
               <div class="mb3">
                 <hr class="border-bottom accent-muted mb1 muted">
-                <div class="flex flex-column justify-between height-3">
+                <div class="flex flex-column justify-between height-2">
                   <div>
                     
                       <h5 class="mb2 gray">ARTICLE <span class="light-silver">BUSINESS INSIDER AUSTRALIA</span>
@@ -524,12 +544,11 @@
                 </div>
               </div>
             </div>
-
         
             <div class="sm-col-6 lg-col-4 px2">
               <div class="mb3">
                 <hr class="border-bottom accent-muted mb1 muted">
-                <div class="flex flex-column justify-between height-3">
+                <div class="flex flex-column justify-between height-2">
                   <div>
                     
                       <h5 class="mb2 gray">ARTICLE <span class="light-silver">2SER 107.3</span>
@@ -547,12 +566,11 @@
                 </div>
               </div>
             </div>
-
         
             <div class="sm-col-6 lg-col-4 px2">
               <div class="mb3">
                 <hr class="border-bottom accent-muted mb1 muted">
-                <div class="flex flex-column justify-between height-3">
+                <div class="flex flex-column justify-between height-2">
                   <div>
                     
                       <h5 class="mb2 gray">ARTICLE <span class="light-silver">TRIPLE J'S HACK</span>
@@ -570,53 +588,6 @@
                 </div>
               </div>
             </div>
-
-        
-            <div class="sm-col-6 lg-col-4 px2">
-              <div class="mb3">
-                <hr class="border-bottom accent-muted mb1 muted">
-                <div class="flex flex-column justify-between height-3">
-                  <div>
-                    
-                      <h5 class="mb2 gray">ARTICLE <span class="light-silver">NASDAQ</span>
-                      </h5>
-                    
-                    <a href="http://www.nasdaq.com/article/governments-around-the-world-are-warming-up-to-bitcoin-and-the-blockchain-cm586766" target="_blank" class="link-reset block hover-show-child">
-                      <h3 class="h-font light line-height-4 accent-on-hover transition-fast inline">
-                        Governments Around the World Are Warming Up to Bitcoin and the Blockchain
-                      </h3><i class="material-icons icon-adjust muted">call_made</i>
-                    </a>
-                  </div>
-                  <time datetime="2016-03-01" class="italic gray">
-                  March 01, 2016
-                  </time>
-                </div>
-              </div>
-            </div>
-
-        
-            <div class="sm-col-6 lg-col-4 px2">
-              <div class="mb3">
-                <hr class="border-bottom accent-muted mb1 muted">
-                <div class="flex flex-column justify-between height-3">
-                  <div>
-                    
-                      <h5 class="mb2 gray">ARTICLE <span class="light-silver">THE DAILY EXAMINER</span>
-                      </h5>
-                    
-                    <a href="http://www.dailyexaminer.com.au/news/party-voters/2941736/" target="_blank" class="link-reset block hover-show-child">
-                      <h3 class="h-font light line-height-4 accent-on-hover transition-fast inline">
-                        A party for voters to 'like'
-                      </h3><i class="material-icons icon-adjust muted">call_made</i>
-                    </a>
-                  </div>
-                  <time datetime="2016-02-23" class="italic gray">
-                  February 23, 2016
-                  </time>
-                </div>
-              </div>
-            </div>
-
         
       </div>
 
@@ -671,8 +642,10 @@
         </div>
 
     </div>
-    <div class="right-align mt4 sm-mt0 hover-show-child">
-      <a href="http://www.meetup.com/FluxSydney/" target="_blank" class="border-bottom">Flux meetup page</a><i class="material-icons icon-adjust muted">call_made</i>
+    <div class="right-align mt4 sm-mt0">
+      <span class="hover-show-child">
+        <a href="http://www.meetup.com/FluxSydney/" target="_blank" class="border-bottom">Flux meetup page</a><i class="material-icons icon-adjust muted">call_made</i>
+      </span>
     </div>
 
   </div>
@@ -762,9 +735,11 @@
  footer here
 
 <!--  
+ Frequently asked questions
+ 
  The Flux voting system explained
  
- Frequently asked questions
+ What is Flux
  
  Who is behind Flux?
  
