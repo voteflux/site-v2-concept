@@ -13,7 +13,7 @@ $(document).ready(function() {
 
     // animate
     $root.animate({
-      scrollTop: $(hash).offset().top - 100
+      scrollTop: $(hash).offset().top
     }, 500, 'swing', function(){
 
        // when done, add hash to url
@@ -41,6 +41,7 @@ $(document).ready(function() {
 
 
 
+
   // meetup
   // $.ajax({
   //   url: "https://api.meetup.com/2/events?offset=0&format=json&limited_events=False&group_urlname=FluxSydney&sig=3ddb1a95711db994ebba2b2dc0d2e7ffb09e40fa&page=200&fields=&sig_id=96374432&order=time&desc=false&status=upcoming",
@@ -57,7 +58,7 @@ $(document).ready(function() {
 
   // get info ajax request
   $.ajax({
-    url: "https://api.voteflux.org/getinfo",
+    url: "https://api.voteflux.org/api/v0/getinfo",
     data: {
       format: 'json'
     },
@@ -80,6 +81,14 @@ $(document).ready(function() {
     type: 'GET'
   });
 
+
+
+	var dteNow = new Date();
+	var intYear = dteNow.getFullYear();
+  var elemYear = document.getElementById("js-footer-year");
+	elemYear.innerHTML = intYear
+
+
   // menu
   var isOpen = true;
   var transitionTime = 150;
@@ -94,17 +103,23 @@ $(document).ready(function() {
   function toggleMenu() {
     isOpen = !isOpen;
     if (!isOpen) {
+      $("#js-navbar").addClass('fixed').removeClass('absolute');
       $("#js-menu").addClass('opacity-1 will-change-opacity').removeClass('hide').removeClass('opacity-0');
-      $("#js-navbar-join-btn").addClass('opacity-0').removeClass('opacity-1');
+      $("#js-navbar-join-btn").addClass('opacity-0 will-change-opacity').removeClass('opacity-1').addClass('hide');
       $('.flux-logo-text').css({ fill: "#fff" });
-      $("#flux-logo-home").addClass('opacity-1');
-      $('body').addClass('overflow-hidden');
+      $("#js-flux-logo-home-light").addClass('opacity-1');
+      // $('body').addClass('overflow-hidden');
+
+        $("#js-flux-logo-home-dark").removeClass('opacity-0');
     } else {
+
+      $("#js-navbar").removeClass('fixed').addClass('absolute');
       $("#js-menu").addClass('opacity-0').removeClass('opacity-1');
-      $('body').removeClass('overflow-hidden');
-      $("#js-navbar-join-btn").addClass('opacity-1').removeClass('opacity-0');
+      // $('body').removeClass('overflow-hidden');
+      $("#js-navbar-join-btn").addClass('opacity-1').removeClass('opacity-0, hide');
       $('.flux-logo-text').css({ fill: "#222" });
-      $("#flux-logo-home").removeClass('opacity-1');
+      $("#js-flux-logo-home-light").removeClass('opacity-1');
+        $("#js-flux-logo-home-dark").addClass('opacity-0');
       setTimeout(function() {
         $("#js-menu")
           .addClass('hide')
@@ -116,32 +131,5 @@ $(document).ready(function() {
   };
 
 
-
-  // // throttle funciton from https://jsfiddle.net/jonathansampson/m7G64/
-  // function throttle (callback, limit) {
-  //   var wait = false;                  // Initially, we're not waiting
-  //   return function () {               // We return a throttled function
-  //     if (!wait) {                   // If we're not waiting
-  //       callback.call();           // Execute users function
-  //       wait = true;               // Prevent future invocations
-  //       setTimeout(function () {   // After a period of time
-  //           wait = false;
-  //           callback.call();
-  //       }, limit);
-  //     }
-  //   }
-  // }
-  //
-  // var $window = $(window);
-  // var menuFadefn = throttle(function() {
-  //   var scrollTop = $window.scrollTop();
-  //     if ( scrollTop > 100 ) {
-  //       $("#js-navbar, #flux-logo-home").addClass('opacity-1').removeClass('will-change-opacity');
-  //     } else {
-  //       $("#js-navbar, #flux-logo-home").removeClass('opacity-1');
-  //     }
-  // }, 500);
-  //
-  // $window.on('scroll', menuFadefn );
 
 });
