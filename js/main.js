@@ -103,7 +103,7 @@ $(document).ready(function() {
   function toggleMenu() {
     isOpen = !isOpen;
     if (!isOpen) {
-      $("#js-navbar").addClass('fixed').removeClass('absolute');
+      // $("#js-navbar").addClass('fixed').removeClass('absolute');
       $("#js-menu").addClass('opacity-1 will-change-opacity').removeClass('hide').removeClass('opacity-0');
       $("#js-navbar-join-btn").addClass('opacity-0 will-change-opacity').removeClass('opacity-1').addClass('hide');
       $('.flux-logo-text').css({ fill: "#fff" });
@@ -113,7 +113,7 @@ $(document).ready(function() {
         $("#js-flux-logo-home-dark").removeClass('opacity-0');
     } else {
 
-      $("#js-navbar").removeClass('fixed').addClass('absolute');
+      // $("#js-navbar").removeClass('fixed').addClass('absolute');
       $("#js-menu").addClass('opacity-0').removeClass('opacity-1');
       // $('body').removeClass('overflow-hidden');
       $("#js-navbar-join-btn").addClass('opacity-1').removeClass('opacity-0, hide');
