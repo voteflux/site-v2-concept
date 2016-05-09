@@ -1,6 +1,61 @@
 $(document).ready(function() {
 
 
+
+
+if ( $('#js-candidates').length != 0 ) {
+  // init slick carousel
+  $('#js-candidates').slick({
+    autoplay: false,
+    speed: 700,
+    arrows: false,
+    focusOnSelect: false,
+    cssEase: 'ease',
+    responsive: [
+      {
+        breakpoint: 2000,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 2,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+           arrows: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  })
+};
+
+
+
+
+
   var $root = $('html, body');
 
 // animate scroll behaviour on side menu
@@ -103,23 +158,19 @@ $(document).ready(function() {
   function toggleMenu() {
     isOpen = !isOpen;
     if (!isOpen) {
-      // $("#js-navbar").addClass('fixed').removeClass('absolute');
       $("#js-menu").addClass('opacity-1 will-change-opacity').removeClass('hide').removeClass('opacity-0');
       $("#js-navbar-join-btn").addClass('opacity-0 will-change-opacity').removeClass('opacity-1').addClass('hide');
       $('.flux-logo-text').css({ fill: "#fff" });
       $("#js-flux-logo-home-light").addClass('opacity-1');
-      // $('body').addClass('overflow-hidden');
-
-        $("#js-flux-logo-home-dark").removeClass('opacity-0');
+      $("#js-flux-logo-text").addClass('fixed').removeClass('absolute');
+      $("#js-flux-logo-home-dark").removeClass('opacity-0');
     } else {
-
-      // $("#js-navbar").removeClass('fixed').addClass('absolute');
+      $("#js-flux-logo-text").addClass('absolute').removeClass('fixed');
       $("#js-menu").addClass('opacity-0').removeClass('opacity-1');
-      // $('body').removeClass('overflow-hidden');
       $("#js-navbar-join-btn").addClass('opacity-1').removeClass('opacity-0, hide');
       $('.flux-logo-text').css({ fill: "#222" });
       $("#js-flux-logo-home-light").removeClass('opacity-1');
-        $("#js-flux-logo-home-dark").addClass('opacity-0');
+      $("#js-flux-logo-home-dark").addClass('opacity-0');
       setTimeout(function() {
         $("#js-menu")
           .addClass('hide')
