@@ -6,7 +6,7 @@ import SectionTitle from '../components/section-title'
 import HttpHelpers from '../utils/http-helpers'
 
 
-const redirectUrl = window.location.href + 'step2'
+const redirectUrl = window.location.href + 'step2';
 
 const FormContainer = React.createClass({
   getInitialState() {
@@ -19,13 +19,14 @@ const FormContainer = React.createClass({
     };
   },
   submit(data) {
-    data.dob = data.dobYear + '-' + data.dobMonth + '-' + data.dobDay + 'T12:00:00'
-    data.address = data.addr_street + ', ' + data.addr_suburb + ', ' + data.addr_postcode
-    this.setState({isLoading: true})
+    data.dob = data.dobYear + '-' + data.dobMonth + '-' + data.dobDay + 'T12:00:00';
+    data.address = data.addr_street + '; ' + data.addr_suburb + '; ' + data.addr_postcode;
+    this.setState({isLoading: true});
     HttpHelpers.sendForm( JSON.stringify(data, null, 4), function(response){
 
       if (__DEV__) {
-        console.log(response), console.log(data);
+        console.log(response);
+        console.log(data);
       }
 
 
@@ -84,9 +85,9 @@ const FormContainer = React.createClass({
             inputClass="checkbox"
             type="checkbox"
             name="onAECRoll"
-            title="Are you on the Australian Electoral Roll?"
+            title="I am on the Australian Electoral Roll"
             validationError="First name is required"
-            value={true} />
+            value={false} />
         </div>
 
         <div className="px3 pb4">
@@ -95,7 +96,7 @@ const FormContainer = React.createClass({
           <MyInput
             inputClass="input"
             name="fname"
-            title="Legal first name"
+            title="Legal First Name"
             autocomplete="given-name"
             validations="isAlpha"
             validationErrors={{
@@ -108,7 +109,7 @@ const FormContainer = React.createClass({
             inputClass="input"
             name="lname"
             autocomplete="family-name"
-            title="Legal last name"
+            title="Legal Last Name"
             validations="isAlpha"
             validationErrors={{
               isRequired: 'First name is required',
@@ -120,7 +121,7 @@ const FormContainer = React.createClass({
               inputClass="input"
               name="mname"
               autocomplete="false"
-              title="Legal middle name"
+              title="Legal Middle Names"
               validations="isAlpha"
               validationErrors={{
                 isAlpha: 'Only letters please'
@@ -131,7 +132,7 @@ const FormContainer = React.createClass({
           <MyInput
             inputClass="input"
             name="addr_street"
-            title="Street address"
+            title="Street Address"
             validationError="Street address is required"
             autocomplete="address-line1"
             validationErrors={{
@@ -262,7 +263,7 @@ const FormContainer = React.createClass({
              inputClass="input"
              type="checkbox"
              name="volunteer"
-             title="I'm interested in volunteering"
+             title="I'm interested in volunteering."
              value={false}
               />
 

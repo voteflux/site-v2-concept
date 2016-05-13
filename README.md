@@ -7,6 +7,8 @@
 
 `npm i -g parallelshell webpack`
 
+`npm install`
+
 ## Don't edit files from _Sites folder 
 
 ## _site folder  and it's contents are cleaned on site builds!!
