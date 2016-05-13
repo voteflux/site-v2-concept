@@ -3,6 +3,10 @@
 1. run npm install 
 2. To start dev environment run: $ `npm run flux`
 
+## Deps
+
+`npm i -g parallelshell webpack`
+
 ## Don't edit files from _Sites folder 
 
 ## _site folder  and it's contents are cleaned on site builds!!
