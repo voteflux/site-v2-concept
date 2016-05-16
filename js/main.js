@@ -91,9 +91,9 @@ if ( $('#js-candidates').length != 0 ) {
   };
 
 
-  var fadeStart = 0 // 100px scroll or less will equiv to 1 opacity
-  var fadeUntil = 400 // 200px scroll or more will equiv to 0 opacity
-  var $fading = $('#js-fading')
+  var fadeStart = 0; // 100px scroll or less will equiv to 1 opacity
+  var fadeUntil = 400; // 200px scroll or more will equiv to 0 opacity
+  var $fading = $('#js-fading');
 
   $(window).bind('scroll', function(){
       var offset = $(document).scrollTop()
@@ -147,9 +147,9 @@ if ( $('#js-candidates').length != 0 ) {
       },
       type: 'GET'
     });
-  }
-  var mins = 2
-  var interval = 1000 * 60 * mins
+  };
+  var mins = 2;
+  var interval = 1000 * 60 * mins;
   getMembers();
   setInterval(getMembers, interval);
 
@@ -197,8 +197,21 @@ if ( $('#js-candidates').length != 0 ) {
     }
     // for hamburger animation
     $("#js-menu-button").toggleClass('is-active');
-  };
+  }
 
+  // deal with referrer
+  var referrer = getParam('r');
 
+  if(referrer === undefined){
+    utmSource = getParam('utm_source');
+    utmCampaign = getParam('utm_campaign');
+    if(utmSource != undefined && utmCampaign != undefined){
+      referrer = utmSource + "-" + utmCampaign;
+    }
+  }
+
+  if(referrer){
+    window.localStorage.setItem("signup-ref", referrer);
+  }
 
 });
